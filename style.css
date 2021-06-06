@@ -88,6 +88,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%);
       background-size: cover;
       background-position: top center;
       text-decoration: none;
+      text-align: center;
   }
   .porfolio .port-contents a::before{
       content: '';
@@ -138,6 +139,9 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%);
     .hero h2{
         font-size: 4vw;
     }
+    .porfolio .port-contents a h3{
+        font-size: 32px;
+    }
   }
   @media only screen and (max-width: 768px) {
     .porfolio .port-contents a{
@@ -148,6 +152,11 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%);
         text-align: center;
         padding: 20px;
         height: 80vh;
+    }
+    .porfolio .port-contents a h3{
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 5px;
     }
   }
 
@@ -160,5 +169,8 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%);
     }
     .hero img{
         max-width: 10vw;
+    }
+    .porfolio .port-contents a h3{
+        font-size: 24px;
     }
   }
