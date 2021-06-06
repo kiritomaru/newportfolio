@@ -89,6 +89,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%);
       background-position: top center;
       text-decoration: none;
       text-align: center;
+      padding: 10px;
   }
   .porfolio .port-contents a::before{
       content: '';
@@ -158,6 +159,9 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%);
         line-height: 1.2;
         margin-bottom: 5px;
     }
+    .porfolio .port-contents a span{
+        font-size: 18px!important;
+    }
   }
 
   @media only screen and (max-width: 480px) {
@@ -172,5 +176,8 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(124,124,124,1) 100%);
     }
     .porfolio .port-contents a h3{
         font-size: 24px!important;
+    }
+    .porfolio .port-contents a span{
+        font-size: 16px!important;
     }
   }
