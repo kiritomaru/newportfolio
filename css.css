@@ -1,0 +1,341 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    text-decoration: none;
+}
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+    padding-bottom: 60px;
+}
+.top-section{
+    background-color: #fff;
+    margin: 80px auto 0;
+    max-width: 1285px;
+    position: relative;
+    height: 615px;
+}
+.top-section .center-img{
+   position: absolute;
+   left: 0;
+   right: 0;
+   margin: 0 auto!important;
+}
+.top-section .ts-left,
+.top-section .ts-right{
+    position: absolute;
+    display: grid;
+    top: 50%;
+    transform: translateY(-50%);
+    grid-template-columns: repeat(2, 160px);
+    gap: 20px;
+}
+.top-section .ts-left{
+    left: 65px;
+}
+.top-section .ts-right{
+    right: 65px;
+}
+.top-section .ts .tsnippets{
+    background-color: #090808;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+.top-section .ts .tsnippets:hover{
+    transform: scale(1.05);
+    
+}
+.top-section .ts .tsnippets img{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 20px;
+}
+.top-section .ts .tsnippets p{
+    font-size: 15px;
+    color: #fff;
+}
+
+
+.bottom-section{
+    position: relative;
+    min-height: 570px;
+    padding: 0 20px;
+}
+.bottom-section .center-content{
+    max-width: 545px;
+    margin: 60px auto 0;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.bottom-section .center-content img{
+    margin-bottom: 10px;
+}
+.bottom-section .center-content h2{
+    font-size: 18px;
+    font-family: "Hahmlet", serif;
+    margin-bottom: 10px;
+    color: #090808;
+}
+.bottom-section .center-content h1{
+    font-size: 40px;
+    font-weight: 500; 
+    line-height: 44px;
+    margin-bottom: 40px;  
+    color: #090808;
+}
+.bottom-section .center-content a{
+    font-size: 16px;
+    font-weight: 500;  
+    color: #090808;     
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}   
+.bottom-section .center-content a img{
+    margin: 0;
+}
+.bottom-section .center-img{
+    position: absolute;
+    top: -60px;
+   left: 0;
+   right: 0;
+   margin: 0 auto!important;
+   width: max-content;
+}
+.bottom-section .center-img .center-img-content{
+    position: relative;
+}
+.bottom-section .cnumbers{
+    position: absolute;
+    max-width: 265px;
+}
+.bottom-section .cnumbers span{
+    width: 51px;
+    height: 51px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #090808;
+
+}
+.bottom-section .cnumbers.c-one{
+    top: -20px;
+    left: 65px;
+}
+.bottom-section .cnumbers.c-one span{
+    margin: 0 -120px 0 0;
+}
+.bottom-section .cnumbers.c-one .cnum-contents{
+    margin: -40px 0 0 -15px;
+    text-align: right;
+    position: relative;
+    left: -320px;
+}
+.bottom-section .cnumbers.c-six{
+    top: -20px;
+    right: -260px;
+}
+.bottom-section .cnumbers.c-six span{
+    margin: 0 0 0 -120px;
+}
+.bottom-section .cnumbers.c-six .cnum-contents{
+    margin: -40px 0 0 0;
+}
+
+.bottom-section .cnumbers.c-two{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -20px;
+}
+.bottom-section .cnumbers.c-two .cnum-contents{
+    margin: 0px 0 0 -15px;
+    text-align: right;
+    position: relative;
+    left: -305px;
+    top: -40px;
+}
+.bottom-section .cnumbers.c-five{
+    top: 50%;
+    transform: translateY(-50%);
+    right: -235px;
+}
+.bottom-section .cnumbers.c-five .cnum-contents{
+    margin: 0px 0 0 -15px;
+    position: relative;
+    right: -100px;
+    top: -40px;
+}
+.bottom-section .cnumbers.c-three{
+    bottom: -15px;
+    left: 65px;
+}
+.bottom-section .cnumbers.c-three .cnum-contents{
+    text-align: right;
+    position: relative;
+    right: 290px;
+    top: -40px;
+}
+.bottom-section .cnumbers.c-four{
+    bottom: 27px;
+    right:-260px;
+}
+.bottom-section .cnumbers.c-four span{
+    margin: 0 0 0 -120px;
+}
+.bottom-section .cnumbers.c-four .cnum-contents{
+    margin: -40px 0 0 -40px;
+}
+
+.bottom-section .cnumbers .cnum-contents h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #090808;
+    font-weight: 500;
+}
+.bottom-section .cnumbers .cnum-contents p{
+    font-size: 16px;
+    color: #777777;
+    line-height: 17.6px;
+}
+.bottom-mobile-process{
+    display: none;
+    position: relative;
+}
+.bottom-mobile-process::before{
+    content:'';
+    height: 93%;
+    background-color: #000;
+    width: 2px;
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
+.bottom-mobile-process .bmp{
+    position: relative;
+    padding-left: 65px;
+    margin-bottom: 30px;
+}
+.bottom-mobile-process .bmp span{
+    width: 51px;
+    height: 51px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #090808;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.bottom-mobile-process .bmp .cnum-contents h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #090808;
+    font-weight: 500;
+}
+.bottom-mobile-process .bmp .cnum-contents p{
+    font-size: 16px;
+    color: #777777;
+    line-height: 17.6px;
+}
+
+@media(max-width: 768px){
+    .top-section{
+        text-align: center;
+        margin: 40px auto 0;
+        height: auto;
+    }
+    .top-section .center-img{
+        position: static;
+        margin: 40px auto!important;
+    }
+    .top-section .ts-left, 
+    .top-section .ts-right{
+        position: static;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(0);
+    }
+    .bottom-section .center-img{
+        display: none;
+    }
+    .bottom-section{
+        height: auto;
+        margin: auto;
+        padding: 20px;
+    }
+    .bottom-mobile-process{
+        display: block;
+    }
+    .bottom-section .center-content{
+        padding-bottom: 60px;
+    }
+    
+}
